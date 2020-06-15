@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Deploymwnt of react app
+name: Deployment of react app
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -37,4 +37,4 @@ jobs:
       run: npm install --global surge
       
     - name: Run surge
-      run:  surge ./build projecthaseeb001.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run:  surge ./build expense-tracker-app.surge.sh --token ${{ secrets.SURGE_TOKEN }}
